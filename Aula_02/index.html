@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Premiere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/The_Premiere_JustLogo.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+            <img src="imagens/The_Premiere_Logo.png" alt="The Premiere Logo">
+            <!-- <h1>The Premiere</h1> -->
+            <div class="container-btn-sub-logo">
+                <div class="sub-logo">
+                    <button  class="btn" id="escolherCidade">
+                        <svg width="180px" height="34px" viewBox="0 0 180 34" class="border">
+                            <rect x="0" width="179" height="34" rx="15" ry="15" class="bg-line" />
+                            <rect x="0" width="179" height="34" rx="15" ry="15" class="hl-line" />
+                        </svg>
+                        <span class="text">Belo Horizonte</span>
+                        <span class="arrow"></span>
+                    </button>
+                    
+                    <h2>Sempre do seu lado, o melhor cinema da sua cidade.</h2>  
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="localizacao">
+
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Localização:</h2>
+                    </div>
+
+                    <!-- <p>Selecione o estado e a cidade para ver os cinemas disponíveis.</p> -->
+                    
+                    <div class="div-estado">
+                        <!-- <label for="estado">Estado:</label> -->
+                        <select id="estado">
+                            <option value="">Selecione um estado</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="es">Espírito Santo</option>
+                        </select>
+                    </div>
+                    
+                    <div class="div-estado">    
+                        <!-- <label for="cidade">Cidade:</label> -->
+                        <select id="cidade" disabled>
+                            <option value="">Selecione uma cidade</option>
+                        </select>
+                    </div>
+                        
+                    <button id="confirmar">Confirmar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="menu">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Filmes</a>
+                <a href="#">Sessões</a>
+                <a href="#">Cinemas</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card">
+                <img src="img/vingadores.jpg" alt="Vingadores">
+                <h3>Vingadores: Ultimato</h3>
+                <p>Data: 25/12/2024</p>
+                <p>Horário: 19:00</p>
+                <button>Comprar Ingresso</button>
+            </div>
+            <div class="card">
+                <img src="img/tenet.jpg" alt="Tenet">
+                <h3>Tenet</h3>
+                <p>Data: 26/12/2024</p>
+                <p>Horário: 21:00</p>
+                <button>Comprar Ingresso</button>
+            </div>
+            <div class="card">
+                <img src="img/dune.jpg" alt="Duna">
+                <h3>Duna</h3>
+                <p>Data: 27/12/2024</p>
+                <p>Horário: 18:00</p>
+                <button>Comprar Ingresso</button>
+            </div>
+            <div class="card">
+                <img src="img/joker.jpg" alt="Coringa">
+                <h3>Coringa</h3>
+                <p>Data: 28/12/2024</p>
+                <p>Horário: 20:00</p>
+                <button>Comprar Ingresso</button>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
