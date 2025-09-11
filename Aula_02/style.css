@@ -194,7 +194,7 @@ header.encolher .menu nav {
     letter-spacing: 0.1em;
     margin-left: 2%;
     width: 95%;
-    height: 35px;
+    height: 40px;
     padding-left: 5px;
     font-family: "roboto", sans-serif;
     display: grid;
@@ -215,6 +215,7 @@ select:disabled {
 }
 
 #confirmar {
+    font-family: "roboto", sans-serif;
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
@@ -322,4 +323,70 @@ main {
   stroke: #fff;
   stroke-width: 2;
   transition: 1s ease-in-out;
+}
+
+/* Em cartaz */
+/* Container dos cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+/* Card individual */
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    width: 260px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #222;
+    text-align: center;
+}
+
+.card p {
+    margin: 0.25rem 0;
+    color: #555;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.2rem;
+    background: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card button:hover {
+    background: #005fcc;
 }
